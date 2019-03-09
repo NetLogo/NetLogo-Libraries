@@ -4,9 +4,9 @@
 
 This repository houses the files that power NetLogo's Extension Manager.  If you want to make a new extension (or new version of an extension) available to the NetLogo community for download from the Extension Manager, this is the place to do it.  All that you need to do is submit [a pull request to this repository](https://github.com/NetLogo/NetLogo-Libraries/compare) and wait for us to merge it (which shouldn't take more than a few days, for a properly-formatted pull request).
 
-**Please make sure that you are making your pull request to the correct branch!**  The 6.1 branch is *only* for extensions that work with NetLogo 6.1.x.  If your extension targets a different version of NetLogo, it must go on the appropriate branch for that version of NetLogo.  There was no Extension Manager before 6.1 (actually, before 6.0 development builds), so there cannot be any branches here for earlier versions of NetLogo.
-
 ## Submitting pull requests
+
+**Please make sure that you are making your pull request to the correct branch!**  The 6.1 branch is *only* for extensions that work with NetLogo 6.1.x.  If your extension targets a different version of NetLogo, it must go on the appropriate branch for that version of NetLogo.  There was no Extension Manager before 6.1 (actually, before 6.0 development builds), so there cannot be any branches here for earlier versions of NetLogo.
 
 Each pull request should have two parts:
 
