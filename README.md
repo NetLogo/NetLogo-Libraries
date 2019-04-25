@@ -32,3 +32,7 @@ Regarding (2), if you are adding a new extension, you should make an insertion i
 All of these fields are mandatory.  All values to the right of the colon should be wrapped in single-quotes (i.e. `"value"`).  `longDescription` may be wrapped in triple-quotes (i.e. `"""value"""`) in order to hold a multiline string.
 
 If you are simply uploading a new version (and not an entirely new extension), the only things that you usually need to change in `libraries.conf` are the extension's `version` field and its `downloadURL`.  And, of course, you still need to also include the new `.zip` file (as mentioned in (1)).
+
+## Email submission
+
+If you do not want to use a pull request to add your extension to the library or to have it updated, you can instead email the CCL developer team at feedback@ccl.northwestern.edu.  You'll need to provide the same information as in the pull request along with the file package, but we'll take care of getting the repository updated.
