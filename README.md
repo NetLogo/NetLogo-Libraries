@@ -13,7 +13,7 @@ Each pull request should have two parts:
   1. A `.zip` file added to the `extensions` directory
   2. A change to the `libraries.conf` file
 
-For (1), the `.zip` file should have a name that follows the format `<extension name>-<version number>.zip`.  The `.zip` *must* contain `<extension name>.jar` and any other supporting files that accompany the extension (e.g. other `.jar` files, `.so` libraries).
+For (1), the `.zip` file should have a name that follows the format `<extension name>-<version number>.zip`.  The `.zip` *must* contain `<extension name>.jar` and any other supporting files that accompany the extension (e.g. other `.jar` files, `.so` libraries).  **Make sure your jar files are in the "root" of the `.zip` file, not a subfolder.**
 
 Regarding (2), if you are adding a new extension, you should make an insertion into `libraries.conf`, in alphabetical order according to the "name" field (e.g. "Fetch" comes after "Dist" and before "GoGo").  The new entry should follow this format:
 
@@ -29,7 +29,7 @@ Regarding (2), if you are adding a new extension, you should make an insertion i
 }
 ```
 
-All of these fields are mandatory.  All values to the right of the colon should be wrapped in single-quotes (i.e. `"value"`).  `longDescription` may be wrapped in triple-quotes (i.e. `"""value"""`) in order to hold a multiline string.
+All of these fields are mandatory.  All values to the right of the colon should be wrapped in single-quotes (i.e. `"value"`).  `longDescription` may be wrapped in triple-quotes (i.e. `"""value"""`) in order to hold a multiline string.  Some editors also like to insert so-called smart-quotes (`“”`) around text, but our configuration file format requires straight quotes (`""`).
 
 If you are simply uploading a new version (and not an entirely new extension), the only things that you usually need to change in `libraries.conf` are the extension's `version` field and its `downloadURL`.  And, of course, you still need to also include the new `.zip` file (as mentioned in (1)).
 
