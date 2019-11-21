@@ -33,6 +33,8 @@ All of these fields are mandatory.  All values to the right of the colon should 
 
 If you are simply uploading a new version (and not an entirely new extension), the only things that you usually need to change in `libraries.conf` are the extension's `version` field and its `downloadURL`.  And, of course, you still need to also include the new `.zip` file (as mentioned in (1)).
 
+A more detailed explanation of an extension submission workflow using git and GitHub [is available in the wiki](https://github.com/NetLogo/NetLogo-Libraries/wiki/Submission-workflow).
+
 ## Platforms
 
 NetLogo supports Windows, macOS, and Linux operating systems and we prefer all extensions in the library support those platforms as well.  If you have libraries or components that cannot work one or two of the operating systems, you can still self-host your extension and distribute it the old fashioned way, by directing users extract the extension alongside a model or into the `extensions` folder under NetLogo.
