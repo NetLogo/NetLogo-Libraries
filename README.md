@@ -35,6 +35,12 @@ If you are simply uploading a new version (and not an entirely new extension), t
 
 A more detailed explanation of an extension submission workflow using git and GitHub [is available in the wiki](https://github.com/NetLogo/NetLogo-Libraries/wiki/Submission-workflow).
 
+## NetLogo Versions
+
+If your extension uses components from the `org.nlogo.api` namespace to interact with NetLogo models, then the extensions manager will take care of making sure your extension is available only to the appropriate versions of NetLogo.
+
+If you use components outside of that package, you may find that things break for your extension in NetLogo releases where the API version stayed the same.  If so you can restrict which specific minimum version of NetLogo your extension supports by adding a `minNetLogoVersion` field to your extension's entry in the `libraries.conf` file.  For example: `minNetLogoVersion: "6.2.0"`.  In this case your extension will be shown in the extensions manager, but it will prompt the user to upgrade NetLogo before they can install and use it.
+
 ## Platforms
 
 NetLogo supports Windows, macOS, and Linux operating systems and we prefer all extensions in the library support those platforms as well.  If you have libraries or components that cannot work one or two of the operating systems, you can still self-host your extension and distribute it the old fashioned way, by directing users extract the extension alongside a model or into the `extensions` folder under NetLogo.
