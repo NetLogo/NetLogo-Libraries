@@ -25,10 +25,9 @@ Regarding (2), if you are adding a new extension, you should make an insertion i
     longDescription: """A full description of what the extension does"""
     version: "The current version number"
     homepage: "The URL that users may go to for documentation about this extension"
-    downloadURL: "https://raw.githubusercontent.com/NetLogo/NetLogo-Libraries/<branch name>/extensions/<extension name>-<version number>.zip"
 }
 ```
 
 All of these fields are mandatory.  All values to the right of the colon should be wrapped in single-quotes (i.e. `"value"`).  `longDescription` may be wrapped in triple-quotes (i.e. `"""value"""`) in order to hold a multiline string.
 
-If you are simply uploading a new version (and not an entirely new extension), the only things that you usually need to change in `libraries.conf` are the extension's `version` field and its `downloadURL`.  And, of course, you still need to also include the new `.zip` file (as mentioned in (1)).
+If you are simply uploading a new version (and not an entirely new extension), the only things that you usually need to change in `libraries.conf` are the extension's `version` field, and maybe its documentation link.  And, of course, you still need to also include the new `.zip` file (as mentioned in (1)).
