@@ -17,5 +17,7 @@ jobs:
           java-version: '17.0'
           java-package: jdk
 
+      - uses: sbt/setup-sbt@v1
+
       - run: sbt -v update compile
       - run: sbt -v test
