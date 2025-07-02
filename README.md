@@ -10,7 +10,7 @@ This repository houses the files that power NetLogo's Extension Manager.  If you
 
 Each pull request should have two parts:
 
-  1. A `.zip` file added to the `extensions` directory.  
+  1. A `.zip` file added to the `extensions` directory.
   2. A change to the `libraries.conf` file
 
 For (1), the `.zip` file should have a name that follows the format `<extension name>-<version number>.zip`.  The `.zip` *must* contain `<extension codeName>.jar` and any other supporting files that accompany the extension (e.g. other `.jar` files, `.so` libraries).  **Make sure your jar files are in the "root" of the `.zip` file, not a subfolder.**  If you're using at least version 5.2.3 of [the NetLogo Extension Plugin for sbt](https://github.com/NetLogo/NetLogo-Extension-Plugin), it can generate an appropriate file for you using [the `packageZip` sbt command](https://github.com/NetLogo/NetLogo-Extension-Plugin/blob/master/README.md#zip-package), including adding extra files such as documentation and example models.  If you add the `netLogoShortDescription`, `netLogoLongDescription`, and `netLogoHomepage` settings to your build file, a snippet will be generated as the below when you run `packageZip` for easy copy/pasting into the `libraries.conf` file, too.
