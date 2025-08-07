@@ -6,6 +6,8 @@ This repository houses the files that power NetLogo's Extension Manager.  If you
 
 ## Submitting pull requests
 
+If your extension was previously listed in the Extension Manager and you would like to get it listed in NetLogo 7, please follow the instructions [here](https://github.com/NetLogo/NetLogo-Libraries/wiki/Resubmitting-an-Extension-for-Listing-in-NetLogo-7).
+
 **Please make sure that you are making your pull request to the correct branch!**  The 6.1 branch is *only* for extensions that work with NetLogo 6.1.x.  If your extension targets a different version of NetLogo, it must go on the appropriate branch for that version of NetLogo.  There was no Extension Manager before 6.1 (actually, before 6.0 development builds), so there cannot be any branches here for earlier versions of NetLogo.
 
 Each pull request should have two parts:
